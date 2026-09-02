@@ -1,4 +1,4 @@
-const name: string = "Taruf Ali";
+const name: string = "Taruf";
 
 function greet(name: string): string {
     return `Hello, ${name}!`;
