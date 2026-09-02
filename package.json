@@ -1,18 +1,19 @@
 {
   "name": "typescript-learning",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A structured collection of TypeScript concepts and example snippets, organized by topic.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "tsc",
-  "start": "node dist/index.js"
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "run": "tsx"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   }
 }

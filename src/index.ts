@@ -1,9 +1,9 @@
-const name: string = "Taruf";
+const userName: string = "Taruf";
 
-function greet(name: string): string {
-    return `Hello, ${name}!`;
+function greet(personName: string): string {
+    return `Hello, ${personName}!`;
 }
 
-console.log(greet(name));
+console.log(greet(userName));
 
 
