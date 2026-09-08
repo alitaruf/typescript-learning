@@ -9,4 +9,4 @@ function printId(id: number | string) {
   }
 }
 printId(45)
-printId("taruf")
+printId("Khan")
