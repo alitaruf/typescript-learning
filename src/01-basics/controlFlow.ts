@@ -1,4 +1,4 @@
-////////////////control flow analysis
+/////////////control flow analysis
 function example() {
   let x: string | number | boolean;
 
