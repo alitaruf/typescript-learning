@@ -10,4 +10,6 @@ Fundamentals: typed variable declarations and basic function signatures.
 
 ```bash
 npm run run -- src/01-basics/variables.ts
+npm run run -- src/01-basics/enums.ts
+npm run run -- src/01-basics/unions.ts
 ```
