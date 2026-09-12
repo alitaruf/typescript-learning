@@ -1,10 +1,20 @@
-function greetUser(name: string, age?: number): string {
-    if (age !== undefined) {
-        return `Hello ${name}, you are ${age} years old.`;
-    }
-
-    return `Hello ${name}.`;
+function calculateTotal(price: number, quantity: number): number {
+    return price * quantity;
 }
 
-console.log(greetUser("Taruf"));
-console.log(greetUser("Taruf", 40));
+function isValidPrice(price: number): boolean {
+    return price > 0;
+}
+
+const price = 500;
+const quantity = 3;
+
+if (isValidPrice(price)) {
+    const total = calculateTotal(price, quantity);
+
+    console.log(`Price: ${price}`);
+    console.log(`Quantity: ${quantity}`);
+    console.log(`Total: ${total}`);
+} else {
+    console.log("Invalid price");
+}
