@@ -1,3 +1,5 @@
+import type { Product } from "./interface";
+
 function displayProduct(product: Product): void {
     console.log(`Product: ${product.name}`);
     console.log(`Price: $${product.price}`);
