@@ -1,6 +1,6 @@
 # 01 — Basics
 
-Fundamentals: typed variables and functions, arrays and tuples, special types (`any`/`unknown`/`void`/`never`), optional/readonly properties, optional chaining and nullish coalescing, destructuring and the spread operator, control flow, unions, enums, type aliases, interfaces, function overloads, and using interfaces to model API responses.
+Fundamentals: typed variables and functions, arrays and tuples, special types (`any`/`unknown`/`void`/`never`), optional/readonly properties, optional chaining and nullish coalescing, destructuring and the spread operator, control flow, unions, type guards, enums, type aliases, interfaces, function overloads, and using interfaces to model API responses.
 
 ## Files
 
@@ -12,6 +12,7 @@ Fundamentals: typed variables and functions, arrays and tuples, special types (`
 - `destructuringAndSpread.ts` — object/array destructuring (with renaming, defaults, and rest), destructured function parameters, and the spread operator for copying/merging/overriding
 - `controlFlow.ts` — control flow analysis narrowing a `string | number | boolean` variable
 - `unions.ts` — union types narrowed with `typeof`
+- `typeGuards.ts` — narrowing with `instanceof`, the `in` operator, and custom `is` type-predicate functions
 - `enum.ts` — a numeric enum plus `keyof typeof` for its string keys
 - `typeAlias.ts` — type aliases for a primitive, an object shape, a union, and a function signature
 - `interface.ts` — a basic interface describing an object shape
@@ -30,6 +31,7 @@ npm run run -- src/01-basics/optionalAndNullish.ts
 npm run run -- src/01-basics/destructuringAndSpread.ts
 npm run run -- src/01-basics/controlFlow.ts
 npm run run -- src/01-basics/unions.ts
+npm run run -- src/01-basics/typeGuards.ts
 npm run run -- src/01-basics/enum.ts
 npm run run -- src/01-basics/typeAlias.ts
 npm run run -- src/01-basics/interface.ts
