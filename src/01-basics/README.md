@@ -1,6 +1,6 @@
 # 01 — Basics
 
-Fundamentals: typed variables and functions, arrays and tuples, special types (`any`/`unknown`/`void`/`never`), optional/readonly properties, optional chaining and nullish coalescing, destructuring and the spread operator, control flow, unions, type guards, enums, type aliases, interfaces, function overloads, and using interfaces to model API responses.
+Fundamentals: typed variables and functions, arrays and tuples, special types (`any`/`unknown`/`void`/`never`), optional/readonly properties, optional chaining and nullish coalescing, destructuring and the spread operator, control flow, unions, type guards, enums, type aliases, interfaces, index signatures, `keyof`/`Record`, function overloads, and using interfaces to model API responses.
 
 ## Files
 
@@ -16,6 +16,7 @@ Fundamentals: typed variables and functions, arrays and tuples, special types (`
 - `enum.ts` — a numeric enum plus `keyof typeof` for its string keys
 - `typeAlias.ts` — type aliases for a primitive, an object shape, a union, and a function signature
 - `interface.ts` — a basic interface describing an object shape
+- `indexSignaturesAndKeyof.ts` — index signatures for dynamic keys, the `keyof` operator, and the `Record<Keys, Value>` utility type
 - `functionoverload.ts` — multiple call signatures for one function implementation
 - `api/interface.ts` — a `Product` interface, exported for reuse
 - `api/example.ts` — importing an interface to type an API-shaped response object
@@ -35,6 +36,7 @@ npm run run -- src/01-basics/typeGuards.ts
 npm run run -- src/01-basics/enum.ts
 npm run run -- src/01-basics/typeAlias.ts
 npm run run -- src/01-basics/interface.ts
+npm run run -- src/01-basics/indexSignaturesAndKeyof.ts
 npm run run -- src/01-basics/functionoverload.ts
 npm run run -- src/01-basics/api/example.ts
 ```
