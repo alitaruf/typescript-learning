@@ -9,6 +9,7 @@ Classes, inheritance, access modifiers, abstract classes.
 - `abstractClasses.ts` — abstract classes and abstract methods, `implements` for multiple interfaces, and combining an abstract base class with an interface contract
 - `compositionAndPrivateFields.ts` — runtime-enforced `#private` fields, composition ("has-a") over inheritance, polymorphism through an interface, and swapping behaviour at runtime
 - `methodChainingAndThisType.ts` — fluent method chaining by returning `this`, and the `this` return type so subclasses keep their own type mid-chain
+- `classMethodOverloads.ts` — overloaded constructors, overloaded regular methods, and an overload whose return type narrows based on the input
 
 ## Run
 
@@ -18,4 +19,5 @@ npm run run -- src/04-oop/inheritance.ts
 npm run run -- src/04-oop/abstractClasses.ts
 npm run run -- src/04-oop/compositionAndPrivateFields.ts
 npm run run -- src/04-oop/methodChainingAndThisType.ts
+npm run run -- src/04-oop/classMethodOverloads.ts
 ```
