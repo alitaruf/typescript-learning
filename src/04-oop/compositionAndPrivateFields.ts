@@ -105,3 +105,5 @@ const checkoutFlow = new Checkout(new CreditCard());
 checkoutFlow.process(15);
 checkoutFlow.setMethod(new CryptoWallet());
 checkoutFlow.process(15);
+
+module.exports = { Wallet, Engine, GpsModule, Car, CreditCard, CryptoWallet, Checkout };

@@ -125,3 +125,5 @@ new Counter();
 new Counter();
 new Counter();
 console.log(`Instances created: ${Counter.count}`);
+
+module.exports = { Person, Product, BankAccount, Order, Temperature, Counter };
