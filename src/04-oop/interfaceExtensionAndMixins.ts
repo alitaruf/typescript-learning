@@ -3,20 +3,20 @@
 //    bigger contract out of smaller ones, the
 //    same way a class extends a class
 // ─────────────────────────────────────────────
-interface Named {
+export interface Named {
   name: string;
 }
 
-interface Aged {
+export interface Aged {
   age: number;
 }
 
 // Employee requires everything from BOTH parent interfaces, plus its own field
-interface Employee extends Named, Aged {
+export interface Employee extends Named, Aged {
   employeeId: number;
 }
 
-class StaffMember implements Employee {
+export class StaffMember implements Employee {
   constructor(
     public name: string,
     public age: number,
@@ -34,9 +34,9 @@ console.log(`${staff.name} (#${staff.employeeId}), age ${staff.age}`);
 //    new class with extra behaviour bolted on - a way
 //    to share behaviour across unrelated classes.
 // ─────────────────────────────────────────────
-type Constructor<T = {}> = new (...args: any[]) => T;
+export type Constructor<T = {}> = new (...args: any[]) => T;
 
-function Timestamped<TBase extends Constructor>(Base: TBase) {
+export function Timestamped<TBase extends Constructor>(Base: TBase) {
   return class extends Base {
     createdAt = new Date();
 
@@ -46,7 +46,7 @@ function Timestamped<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-function Serializable<TBase extends Constructor>(Base: TBase) {
+export function Serializable<TBase extends Constructor>(Base: TBase) {
   return class extends Base {
     serialize(): string {
       return JSON.stringify(this);
@@ -54,7 +54,7 @@ function Serializable<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-class Document {
+export class Document {
   constructor(public title: string) {}
 }
 
@@ -71,7 +71,7 @@ console.log(`Serialized: ${doc.serialize()}`);
 //    `Timestamped` and `Serializable` can each be
 //    reused on a totally different base class too
 // ─────────────────────────────────────────────
-class Image {
+export class Image {
   constructor(public url: string) {}
 }
 
