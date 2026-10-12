@@ -30,6 +30,14 @@ Snippets run directly via [tsx](https://github.com/privatenumber/tsx) — no bui
 npm run run -- src/01-basics/variables.ts
 ```
 
+## Running tests
+
+Runs the `*.test.ts` files with Node's built-in test runner:
+
+```bash
+npm test
+```
+
 ## Type-checking everything
 
 Validates every snippet compiles cleanly, without emitting output:

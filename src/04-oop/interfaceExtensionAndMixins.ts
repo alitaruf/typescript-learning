@@ -3,20 +3,20 @@
 //    bigger contract out of smaller ones, the
 //    same way a class extends a class
 // ─────────────────────────────────────────────
-export interface Named {
+interface Named {
   name: string;
 }
 
-export interface Aged {
+interface Aged {
   age: number;
 }
 
 // Employee requires everything from BOTH parent interfaces, plus its own field
-export interface Employee extends Named, Aged {
+interface Employee extends Named, Aged {
   employeeId: number;
 }
 
-export class StaffMember implements Employee {
+class StaffMember implements Employee {
   constructor(
     public name: string,
     public age: number,
@@ -34,9 +34,9 @@ console.log(`${staff.name} (#${staff.employeeId}), age ${staff.age}`);
 //    new class with extra behaviour bolted on - a way
 //    to share behaviour across unrelated classes.
 // ─────────────────────────────────────────────
-export type Constructor<T = {}> = new (...args: any[]) => T;
+type Constructor<T = {}> = new (...args: any[]) => T;
 
-export function Timestamped<TBase extends Constructor>(Base: TBase) {
+function Timestamped<TBase extends Constructor>(Base: TBase) {
   return class extends Base {
     createdAt = new Date();
 
@@ -46,7 +46,7 @@ export function Timestamped<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-export function Serializable<TBase extends Constructor>(Base: TBase) {
+function Serializable<TBase extends Constructor>(Base: TBase) {
   return class extends Base {
     serialize(): string {
       return JSON.stringify(this);
@@ -54,7 +54,7 @@ export function Serializable<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-export class Document {
+class Document {
   constructor(public title: string) {}
 }
 
@@ -71,10 +71,12 @@ console.log(`Serialized: ${doc.serialize()}`);
 //    `Timestamped` and `Serializable` can each be
 //    reused on a totally different base class too
 // ─────────────────────────────────────────────
-export class Image {
+class Image {
   constructor(public url: string) {}
 }
 
 const TimestampedImage = Timestamped(Image);
 const image = new TimestampedImage("photo.png");
 console.log(`Image age in ms: ${image.getAge()}`);
+
+module.exports = { StaffMember, Timestamped, Serializable, Document, Image };

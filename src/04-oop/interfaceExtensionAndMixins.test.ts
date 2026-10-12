@@ -1,12 +1,12 @@
-import { test } from "node:test";
-import assert from "node:assert/strict";
-import {
+const { test } = require("node:test");
+const assert = require("node:assert/strict");
+const {
   StaffMember,
   Timestamped,
   Serializable,
   Document,
   Image,
-} from "./interfaceExtensionAndMixins";
+} = require("./interfaceExtensionAndMixins");
 
 test("StaffMember satisfies the combined Employee interface", () => {
   const staff = new StaffMember("Ali", 28, 101);

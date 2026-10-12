@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A structured collection of TypeScript concepts and example snippets, organized by topic.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "run": "tsx"
