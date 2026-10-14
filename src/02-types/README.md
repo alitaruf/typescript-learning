@@ -7,11 +7,19 @@ TypeScript's static type system: interfaces, type aliases, union and intersectio
 ## Files
 
 - `literalTypes.ts` — string/numeric literal types, how they narrow a plain `string`/`number`, and how `const` vs `let` affects literal widening
+- `literalTypes.test.ts` — tests for the above, covering `move()`, `rollResult()`, and `setStatus()` across their allowed literal values
 - `intersectionTypes.ts` — combining multiple types with `&` so a value must satisfy all of them at once
+- `intersectionTypes.test.ts` — tests for the above, covering a two-type intersection, a three-type intersection, `printEmployee()`, and intersecting an interface with an inline type alias
 
 ## Run
 
 ```bash
 npm run run -- src/02-types/literalTypes.ts
 npm run run -- src/02-types/intersectionTypes.ts
+```
+
+## Test
+
+```bash
+npm test
 ```

@@ -44,3 +44,5 @@ let changeableDirection = "left"; // type is widened to string
 
 move(fixedDirection);
 // move(changeableDirection);   // Error: string is not assignable to Direction
+
+module.exports = { move, rollResult, setStatus };
