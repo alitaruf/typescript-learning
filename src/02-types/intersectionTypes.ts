@@ -60,5 +60,3 @@ const event: LoggedEvent = {
 };
 
 console.log(`[${event.createdAt.toISOString()}] ${event.message}`);
-
-module.exports = { person, employee, event, printEmployee };

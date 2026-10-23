@@ -74,5 +74,3 @@ function handle(event: AppEvent): string {
 
 console.log(handle({ timestamp: new Date(), type: "click", x: 10, y: 20 }));
 console.log(handle({ timestamp: new Date(), type: "key", key: "Enter" }));
-
-module.exports = { area, describe, handle };

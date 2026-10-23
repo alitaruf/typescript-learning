@@ -53,5 +53,3 @@ const widenedConfig = { env: "production", retries: 3 }; // env: string, retries
 // describeConfig(widenedConfig.env);   // Error: string is not "production" | "staging"
 widenedConfig.env = "staging"; // fine - no `as const`, so env is just a plain string
 console.log(`Widened config env is now: ${widenedConfig.env}`);
-
-module.exports = { move, describeConfig, directions, config };
