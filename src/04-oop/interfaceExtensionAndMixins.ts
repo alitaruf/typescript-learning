@@ -78,5 +78,3 @@ class Image {
 const TimestampedImage = Timestamped(Image);
 const image = new TimestampedImage("photo.png");
 console.log(`Image age in ms: ${image.getAge()}`);
-
-module.exports = { StaffMember, Timestamped, Serializable, Document, Image };

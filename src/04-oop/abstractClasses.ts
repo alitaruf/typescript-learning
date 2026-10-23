@@ -117,5 +117,3 @@ class SmsNotifier extends BaseNotifier {
 
 new EmailNotifier().send("  Your order has shipped  ");
 new SmsNotifier().send("Your order has shipped and arrives tomorrow morning.");
-
-module.exports = { Shape, Circle, Rectangle, Report, BaseNotifier, EmailNotifier, SmsNotifier };

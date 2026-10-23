@@ -89,5 +89,3 @@ class Cart {
 
 const cart = new Cart().add("Book", 20).add("Pen", 3).add("Bag", 35).remove("Pen");
 console.log(`Cart total: $${cart.total()}`);
-
-module.exports = { QueryBuilder, Animal, Dog, Cart };

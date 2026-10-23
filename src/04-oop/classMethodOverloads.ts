@@ -76,5 +76,3 @@ const many = repo.find([1, 2, 3]); // (string | undefined)[]
 
 console.log(`One: ${one}`);
 console.log(`Many: ${many.join(", ")}`);
-
-module.exports = { Point, Logger, Repository };

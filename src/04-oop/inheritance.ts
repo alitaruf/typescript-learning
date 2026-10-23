@@ -89,5 +89,3 @@ console.log(car.describe());
 console.log(`dog is Dog: ${dog instanceof Dog}`);
 console.log(`dog is Animal: ${dog instanceof Animal}`);
 console.log(`dog is Fish: ${dog instanceof Fish}`);
-
-module.exports = { Animal, Dog, Bird, Fish, Vehicle, Car };
