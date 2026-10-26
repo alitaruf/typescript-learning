@@ -12,6 +12,7 @@ Classes, inheritance, access modifiers, abstract classes.
 - `classMethodOverloads.ts` — overloaded constructors, overloaded regular methods, and an overload whose return type narrows based on the input
 - `interfaceExtensionAndMixins.ts` — interfaces extending multiple interfaces, and mixins for sharing behaviour across unrelated classes (since a class can only `extends` one parent)
 - `staticFactoriesAndSingletons.ts` — private constructors, the singleton pattern via a static `getInstance()`, a static factory method that hides which subclass gets constructed, and named static factories as an alternative to subclassing
+- `overrideKeyword.ts` — how a typo'd override silently fails without the `override` keyword, what `override` catches at compile time, and how it protects subclasses when a base class method is renamed or removed
 
 ## Run
 
@@ -24,4 +25,5 @@ npm run run -- src/04-oop/methodChainingAndThisType.ts
 npm run run -- src/04-oop/classMethodOverloads.ts
 npm run run -- src/04-oop/interfaceExtensionAndMixins.ts
 npm run run -- src/04-oop/staticFactoriesAndSingletons.ts
+npm run run -- src/04-oop/overrideKeyword.ts
 ```
