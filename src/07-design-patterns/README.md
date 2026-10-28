@@ -4,4 +4,10 @@ Common design patterns (singleton, factory, observer, etc.) implemented in TypeS
 
 ## Files
 
-_Planned — no examples yet._
+- `observerPattern.ts` — a `Subject`/`Observer` pair of interfaces, a `NewsPublisher` that notifies all subscribed observers on an event, and subscribing/unsubscribing at runtime
+
+## Run
+
+```bash
+npm run run -- src/07-design-patterns/observerPattern.ts
+```
