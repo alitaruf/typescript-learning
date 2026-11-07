@@ -9,6 +9,7 @@ Common design patterns (singleton, factory, observer, etc.) implemented in TypeS
 - `decoratorPattern.ts` — a `Coffee` interface, an abstract `CoffeeDecorator` that wraps another `Coffee`, and concrete decorators stacked at runtime to add behaviour without subclassing every combination
 - `adapterPattern.ts` — a `PaymentProcessor` interface, a `LegacyGateway` with an incompatible shape, and an adapter that translates calls so client code can treat the legacy and a native implementation the same way
 - `builderPattern.ts` — a `PizzaBuilder` that assembles a `Pizza` step by step through chained calls, keeping construction separate from the final, immutable object it produces
+- `commandPattern.ts` — a `Command` interface wrapping actions on a `TextDocument`, and a `CommandHistory` invoker that runs and undoes commands without knowing what any of them actually do
 
 ## Run
 
@@ -18,4 +19,5 @@ npm run run -- src/07-design-patterns/strategyPattern.ts
 npm run run -- src/07-design-patterns/decoratorPattern.ts
 npm run run -- src/07-design-patterns/adapterPattern.ts
 npm run run -- src/07-design-patterns/builderPattern.ts
+npm run run -- src/07-design-patterns/commandPattern.ts
 ```
